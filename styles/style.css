@@ -132,3 +132,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+li {
+  border: 1px solid red;
+  max-width: 100px; }
