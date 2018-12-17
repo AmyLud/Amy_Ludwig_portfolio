@@ -1,0 +1,72 @@
+.navBar {
+     background: $darkColor;
+     border: none;
+     div, ul {
+          border: none;
+          padding: 0px;
+     }
+     .wrapper--wide {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+     }
+     
+     
+}
+
+.logoContainer {
+     width: 25%;
+}
+
+.nav {
+     flex: 1 0 30px;    
+     text-transform: uppercase;
+     // border: 1px solid red;
+     &List {
+          display: flex;
+          justify-content: space-around;
+          
+          &__item {
+          }
+          &__link {
+               display: block;
+               padding: 5px 10px;
+               font-size: 1.3rem;
+               color: $lightColor;
+               height: 100%;
+               // border: 1px solid green;
+          }
+
+     }
+
+
+
+}
+
+.socials{
+     width: 25%;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+}
+
+.socialsList {
+     padding: 0;
+     display: flex;
+     align-items: center;
+     &__item {
+     // border: 1px solid red;
+     max-width: 18px;
+     background: black;
+     margin: 0 3px;
+     padding: 0 2px;
+     }
+     &__item:last-child {
+          margin-right: 0;
+     }
+     svg {
+          // border: 1px solid blue;
+          max-width: 100%;
+     }
+
+}

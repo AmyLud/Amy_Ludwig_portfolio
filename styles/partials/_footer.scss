@@ -1,0 +1,20 @@
+footer {
+     text-align: center;
+     position: relative;
+     &::before {
+          content: "";
+          // border: 1px solid red;
+          background: $midTone1;
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          top: -15px;
+          left: 50%;
+          margin-left: -15px;
+          transform: rotate(45deg);
+     }
+     .copyright{
+          padding: 5px;
+          background: $darkColor;
+     }
+}

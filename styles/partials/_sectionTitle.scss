@@ -1,0 +1,64 @@
+.logo {
+     border: 2px solid $lightColor;
+     display: inline-block;
+     padding: 1px 7px;
+     letter-spacing: 4px;
+     font-size: 1.4rem;
+     color: $lightColor;
+     &--large {
+          border: 5px solid $lightColor;
+          box-shadow: 0 0 20px rgba(139, 139, 139, 0.7), inset 0 0 20px rgba(139, 139, 139, 0.7);
+          padding: 20px;
+          font-size: 8rem; 
+          // text-align: center;
+          margin: 0 auto;
+     }
+     &--medium {
+          border: 3px solid $lightColor;
+          box-shadow: 0 0 20px rgba(139, 139, 139, 0.7), inset 0 0 20px rgba(139, 139, 139, 0.7);
+          padding: 10px;
+          font-size: 4rem; 
+          display: inline-block;
+          margin: 50px auto;
+     }
+}
+
+.wrapper--dark {
+     .sectionTitle__container {
+          border: 2px solid $lightColor;
+
+     }
+     .sectionTitle__iconContainer {
+          border-left: 2px solid $lightColor;
+     }
+}
+
+.sectionTitle {
+     margin-bottom: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     &__container {
+          border: 2px solid $darkColor;
+          padding: 0;
+          display: flex;
+          align-items: center;
+     }
+     &__text {
+          font-size: 2rem;
+          display: flex;
+          padding: 0 15px;
+          display: inline-block;
+     }
+     &__iconContainer {
+          padding: 5px 10px;
+          display: inline-block;
+          border: none;
+          border-left: 2px solid $darkColor;
+     }
+     .sectionTitle__icon {
+          border: 1px solid transparent;
+          font-size: 1.4rem;
+          padding: 0;
+     }
+}    

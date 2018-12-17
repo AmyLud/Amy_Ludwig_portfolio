@@ -1,0 +1,25 @@
+header {
+     height: 100vh;
+     overflow: visible;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+
+}
+
+.header{
+     border: none;
+     text-align: center;
+     padding-top: 200px;
+     color: $lightColor;
+     text-shadow: 0 0 20px rgba(255,255,255,0.7);
+}
+
+
+
+.navBar {
+     // position: sticky;
+     // top: 0;
+     // width: 100%;
+     // z-index: 100;
+}
