@@ -1,20 +1,38 @@
 footer {
      text-align: center;
      position: relative;
+     .wrapper--wide {
+          padding: 0;
+     }
+
      &::before {
           content: "";
-          // border: 1px solid red;
-          background: $midTone1;
-          width: 30px;
-          height: 30px;
+          border: 15px solid #303030;
+          border-right: 15px solid transparent;
+          border-bottom: 15px solid transparent;
+          width: 0px;
+          height: 0px;
           position: absolute;
-          top: -15px;
+          top: -14px;
           left: 50%;
           margin-left: -15px;
           transform: rotate(45deg);
      }
      .copyright{
-          padding: 5px;
-          background: $darkColor;
+          padding: 10px;
+          background: rgba(0, 0, 0, 0.2);
+     }
+
+     .socials--footer {
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          margin: 20px auto 50px;
+          text-align: center;
+          font-size: 2rem;
+          .socialsList__item {
+               margin: 0 10px;
+          }
      }
 }
+

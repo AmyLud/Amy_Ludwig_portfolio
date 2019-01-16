@@ -1,6 +1,9 @@
 .navBar {
-     background: $darkColor;
-     border: none;
+     background: rgba(0, 0, 0, 0.2);
+     padding: 5px;
+     // border-top: 1px solid white;
+     // border-bottom: 1px solid white;
+     // border: none;
      div, ul {
           border: none;
           padding: 0px;
@@ -24,14 +27,12 @@
      // border: 1px solid red;
      &List {
           display: flex;
-          justify-content: space-around;
+          justify-content: center;
           
-          &__item {
-          }
           &__link {
                display: block;
                padding: 5px 10px;
-               font-size: 1.3rem;
+               
                color: $lightColor;
                height: 100%;
                // border: 1px solid green;
@@ -39,9 +40,9 @@
 
      }
 
-
-
+     
 }
+
 
 .socials{
      width: 25%;
@@ -57,16 +58,42 @@
      &__item {
      // border: 1px solid red;
      max-width: 18px;
-     background: black;
      margin: 0 3px;
      padding: 0 2px;
      }
      &__item:last-child {
           margin-right: 0;
      }
+     &__link {
+          color: white;
+     }
      svg {
           // border: 1px solid blue;
           max-width: 100%;
      }
 
+}
+
+
+@media (max-width: 600px) {
+     .socials{ 
+          display: none;
+     }
+
+     .logoContainer {
+          display: none;
+     }
+     .logo {
+          &--large {
+               font-size: 4.5rem;
+          }
+     }
+
+     .nav {
+          &List {
+               &__link {
+                    font-size: 1.3rem;
+               }
+          }
+     }
 }

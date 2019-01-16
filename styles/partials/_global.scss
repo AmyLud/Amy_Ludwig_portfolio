@@ -1,17 +1,35 @@
 html {
      font-size: 62.5%;
+     scroll-behavior: smooth;
 }
 body {
-     font-size: 1.4rem;
+     margin: 0;
+     padding: 0;
+     font-size: 1.6rem;
      font-family: 'Montserrat', sans-serif;
-     background: $midTone1;
+     background: $darkColor;
+     overflow-x: hidden;
 }
 img {
      width: 100%;
-     height: 100%;
+     max-height: 100%;
      filter: grayscale(10);
      display: block;
 }
+
+p {
+     letter-spacing: 1px;
+}
+
+canvas { 
+          width: 100%; 
+          height: 100%;
+          position: absolute;
+          z-index: -100;
+          top: 0;
+          bottom: 0px;
+          left: 0;
+      }
 
 a {
      text-decoration: none;
@@ -47,10 +65,7 @@ h1, h2, h3, h4 {
      padding: 0;
      margin: 0;
 }
-h3 {
-     font-size: 1.5rem;
 
-}
 
 footer {
      color: $lightColor;
@@ -62,20 +77,21 @@ footer {
      max-width: 1080px;
      margin: 0 auto;
      background: $midTone4;
+     
      // padding: 25px 0;
 }
 .wrapper--dark {
      padding: 50px 0;
      width: 90%;
      max-width: 1080px;
-     margin: 0 auto;
+     margin: 25px auto;
      color: $lightColor;
 }
 
-.portfolioSection {
-     background: $midTone4;
-
-}
+// .portfolioSection {
+//      background: $midTone4;
+     
+// }
 .wrapper--wide {
      padding: 50px 0 100px;
      width: 100%;
@@ -83,3 +99,28 @@ footer {
      margin: 0 auto;
 }
 
+li {
+     margin: 0;
+}
+
+@media (max-width: 700px) {
+     
+     .wrapper {
+     padding: 25px 25px 50px;
+     width: 95%;
+     margin: 0 auto;
+     }     
+     
+     .wrapper--dark {
+          width: 95%;
+          padding: 25px 0;
+          margin: 25px auto;
+     }
+     .wrapper--wide {
+          width: 100%;
+
+     }
+     .wrapper--dark {
+          width: 95%;
+     }
+}

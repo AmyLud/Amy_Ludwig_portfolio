@@ -1,0 +1,45 @@
+.reviewSection__content {
+     // border: 1px solid red;
+     text-align: center;
+     width: 100%;
+     height: 125%;     
+     // margin: 10px;
+     // padding: 0px 200px;
+     // overflow: hidden;
+}
+.flickity-viewport {
+     overflow: hidden;
+     padding: 0;
+     height: 230px;
+     
+}
+.flickity-slider {
+     padding: 0;
+}
+.reviewSection {
+     .sectionTitle {
+          margin: 20px;
+     }
+}
+
+@media (max-width: 400px) {
+     .flickity-viewport {
+     overflow: hidden;
+     padding: 0;
+     height: 260px;
+     
+}
+     .reviewSection__content {
+          // height: 200px;
+          
+          p {
+               // font-size: 1.2rem;
+               margin-top: 0;
+          }
+          h3 {
+               font-size: 1.4rem;
+          }
+     }
+
+
+}

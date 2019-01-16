@@ -1,0 +1,116 @@
+
+.flickity-button {
+  display: none;
+}
+
+.flickity-page-dots {
+  bottom: 0px;
+}
+.main-carousel {
+     overflow: hidden;
+}
+
+.carousel-cell {
+     width: 100%;
+     height: 125px;
+}
+
+.statsSection, .reviewSection {
+     .wrapper--dark {
+          background: rgba(0, 0, 0, 0.2);
+     }
+
+}
+
+
+.statsSection__skills {
+     padding: 10px;
+     flex: 0 0 40%;
+
+
+     .statsSection__row {
+          // height: 100px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          
+          
+          
+          
+     }
+
+     .skill {
+          width: 33%;
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
+          border: none;
+          padding: 0;
+          padding-top: 5px;
+          margin: 10px;
+          &__text {
+               text-transform: uppercase;
+               border: none;
+               // margin: 0;
+          }
+          &__iconContainer {
+               margin: 20px 0 10px;
+               border: 1px solid white;
+               width: 50px;
+               height: 50px;
+               padding: 9px 1px 6px 0;
+               text-align: center;
+               transform: rotate(45deg);
+          i {
+               transform: rotate(-45deg);
+               color: white;
+               font-size: 3rem;
+               width: 35px;
+          }
+          }
+     }
+}
+
+
+@media (max-width: 740px) {
+     
+     .statsSection__skills {
+          .statsSection__row {
+               justify-content: space-between;
+          }
+     
+          .skill {
+               width: 30%;
+               margin: 0;
+               &__text {
+
+                    font-size: 1.2rem;
+                    // line-height: 2rem;
+               }
+          }
+     }
+
+     
+}
+@media (max-width: 550px) {
+     
+     .statsSection__skills {
+          .statsSection__row {
+               justify-content: space-between;
+          }
+     
+          .skill {
+               &__text {
+
+                    font-size: 1.1rem;
+                    text-align: center;
+               }
+               span {
+                    display: block;
+               }
+          }
+     }
+
+
+}
